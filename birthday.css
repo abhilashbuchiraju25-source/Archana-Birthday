@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+    color: #333;
+}
+
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+nav {
+    height: 70px;
+    background-color: #ff4f81;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    color: #ffe4ec;
+}
+
+
+/* =========================
+   HOME SECTION
+========================= */
+
+.home {
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 79, 129, 0.75),
+            rgba(255, 170, 190, 0.75)
+        ),
+        url("photo2.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content {
+    color: white;
+    max-width: 800px;
+    padding: 30px;
+}
+
+.small-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.home h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.home h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    background-color: white;
+    color: #ff4f81;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #ff4f81;
+    color: white;
+}
+
+
+/* =========================
+   WISHES SECTION
+========================= */
+
+.wishes {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.wishes > h1 {
+    color: #ff4f81;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.wish-box {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 5px 25px #ddd;
+}
+
+.wish-box img {
+    width: 350px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+.wish-text {
+    text-align: left;
+}
+
+.wish-text h2 {
+    color: #ff4f81;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.wish-text p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.wish-text h3 {
+    color: #ff4f81;
+    margin-top: 20px;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-section {
+    padding: 80px 8%;
+
+    background-color: #ffeaf0;
+
+    text-align: center;
+}
+
+.gallery-section h1 {
+    color: #ff4f81;
+    font-size: 40px;
+}
+
+.subtitle {
+    margin: 15px 0 40px;
+    font-size: 18px;
+}
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.photo {
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px #ddd;
+
+    transition: 0.3s;
+}
+
+.photo:hover {
+    transform: translateY(-10px);
+}
+
+.photo img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.photo h3 {
+    color: #ff4f81;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.memories {
+    padding: 80px 8%;
+
+    text-align: center;
+}
+
+.memories h1 {
+    color: #ff4f81;
+
+    font-size: 40px;
+
+    margin-bottom: 5px;
+}
+
+.message {
+    max-width: 800px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 5px 20px #ddd;
+}
+
+.message p {
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+.message h2 {
+    color: #ff4f81;
+
+    margin: 20px;
+}
+
+.message h3 {
+    color: #ff4f81;
+
+    margin: 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #ff4f81;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        height: auto;
+
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-top: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .home h2 {
+        font-size: 28px;
+    }
+
+
+    .wish-box {
+        flex-direction: column;
+    }
+
+    .wish-box img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .wish-text {
+        text-align: center;
+    }
+
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* Extra mobile-friendly improvements */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 15px 12px;
+    }
+
+    nav h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 4px;
+    }
+
+    nav ul li {
+        margin: 4px 7px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .home {
+        min-height: 90vh;
+        height: auto;
+        padding: 50px 15px;
+    }
+
+    .home-content {
+        padding: 20px 10px;
+    }
+
+    .small-text {
+        font-size: 16px;
+    }
+
+    .home h1 {
+        font-size: 34px;
+    }
+
+    .home h2 {
+        font-size: 24px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    .wishes,
+    .gallery-section,
+    .memories {
+        padding: 55px 15px;
+    }
+
+    .wishes > h1,
+    .gallery-section h1,
+    .memories h1 {
+        font-size: 30px;
+    }
+
+    .wish-box {
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .wish-box img {
+        width: 100%;
+        height: auto;
+        max-height: 430px;
+    }
+
+    .wish-text h2 {
+        font-size: 24px;
+    }
+
+    .wish-text p,
+    .message p {
+        font-size: 16px;
+    }
+
+    .gallery {
+        gap: 18px;
+    }
+
+    .photo {
+        padding: 10px;
+    }
+
+    .photo img {
+        height: auto;
+        max-height: 500px;
+    }
+
+    .message {
+        padding: 25px 18px;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer h2 {
+        font-size: 18px;
+    }
+}
